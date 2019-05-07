@@ -1,6 +1,6 @@
 # PolyWhirl
 
-![Polywhirl Pokedex image][images/Poliwhirl.png]
+![Poliwhirl Pokedex image](images/Poliwhirl.png)
 
 Polywhirl is a tiny program I wrote on a somewhat cramped overnight plane trip to Spain.
 It uses the generalized idea of a [Polygon Spiral](http://mathworld.wolfram.com/PolygonalSpiral.html) which I'll call a _Polygon Wedge_ or _wedge_ for short and then plots all wedges. 
