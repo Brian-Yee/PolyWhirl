@@ -44,7 +44,7 @@ def draw_polygons(polygons, modulus):
     stream, (width, height) = canvas.print_to_buffer()
     img = np.fromstring(stream, np.uint8).reshape((height, width, 4))
 
-    plt.imsave("spiral.png", _trim_border(img))
+    plt.imsave("images/spiral.png", _trim_border(img))
 
 
 def _trim_border(img):
