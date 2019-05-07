@@ -8,4 +8,4 @@ For fun, you can control which wedges are plotted by setting a modulus argument,
 
 ![Image of a 36-gon poly wedges plotted every mod 6](images/spiral.png)
 
-It can also be used as an illustrative teaching tool for how polar coordinates can help simplify certain problems a lot.
+It can also be used as an illustrative teaching tool for introducing polar coordinates as they are a very useful way to express the _n-gons_ and inner n-gon duals for constructing the wedges.
