@@ -22,7 +22,7 @@ run:
 
 test:
 	black --check .
-	pylint *.py
+	pylint *.py src
 
 clean:
 	black .

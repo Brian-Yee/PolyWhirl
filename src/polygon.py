@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Polygon data class for holding helpful values.
+"""
 from dataclasses import dataclass  # back port of python3.7 class
 import numpy as np
 
