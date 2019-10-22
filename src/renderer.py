@@ -29,13 +29,20 @@ def draw_polygons(polygons, modulus):
         for func in (np.cos, np.sin)
     ]
 
-    for i in range(1, num_sides, modulus):
+    if modulus == -1:
+        iterations = range(0, num_sides, 1)
+    else:
+        iterations = range(1, num_sides, modulus)
+
+    for i in iterations:
         neighbour = (i + 1) % num_sides
         spiral_coords = [
             [x[i] for x in coords[1:]] + [x[neighbour] for x in coords[::-1]]
             for coords in poly_coords
         ]
         plt.fill(*spiral_coords, color=viridis(i))
+
+    plt.gca().set_aspect("equal")
     plt.gca().axis("off")
 
     canvas = FigureCanvasAgg(plt.gcf())

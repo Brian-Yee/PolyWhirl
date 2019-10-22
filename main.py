@@ -84,7 +84,9 @@ def assert_argument_vals(args):
             Argparse namespace containg CLI inputs.
     """
     assert args.polygon_sides >= 3, "Invalid amount of sides passed."
-    assert args.modulus > 0, "Modulus must be a natural number."
+    assert (
+        args.modulus > 0 or args.modulus == -1
+    ), "Modulus must be a natural number or -1."
 
 
 if __name__ == "__main__":
